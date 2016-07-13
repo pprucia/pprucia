@@ -45,8 +45,8 @@
   -ms-user-select: none;
   user-select: none;
   &:hover {
-    background-color: mix($gray, $blue, 40%);
-    border: 1px solid mix($gray, $blue, 40%);
+    background-color: mix($gray, $base-color, 40%);
+    border: 1px solid mix($gray, $base-color, 40%);
     color: darken($white, 5%);
   }
   &_info {
@@ -64,10 +64,10 @@
     }
   }
   &_success{
-    background-color: lighten($green, 10%);
+    background-color: lighten($base-color, 10%);
     &:hover {
-      background-color: darken($green, 5%);
-      border-color: darken($green, 5%);
+      background-color: darken($base-color, 5%);
+      border-color: darken($base-color, 5%);
     }
   }
   &_danger {
@@ -155,7 +155,7 @@ a.btn {
     @include notice($yellow);
   }
   &_success {
-    @include notice($green);
+    @include notice($base-color);
   }
   &_danger {
     @include notice($red);
