@@ -102,7 +102,7 @@ canvas {
   }
 }
 
-.posts-menu-icon {
+.skills-menu-icon {
   position: absolute;
   top: 30px;
   right: 90px;
@@ -139,7 +139,55 @@ canvas {
   }
 }
 
+.posts-menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  width: 20px;
+  height: 25px;
+  border: 2px solid $gray;
+  background: $white;
+  &:before {
+    content: '';
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    right: 2px;
+    border: 2px solid $gray;
+    top: 2px;
+    background: $white;
+  }
+  &:after {
+    content: '';
+    width: 20px;
+    height: 25px;
+    border: 2px solid $gray;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background: $white;
+  }
+  &:hover {
+    border-color: $base-color;
+    &:before,
+    &:after {
+      border-color: $base-color;
+    }
+  }
+}
+
+.menu-icon-selected {
+  border: 2px solid lighten($blue, 20);
+  &:before {
+    border: 2px solid lighten($blue, 20);
+  }
+  &:after {
+    border: 2px solid lighten($blue, 20);
+  }
+}
+
 .posts-link,
+.skills-link,
 .projects-link {
   position: absolute;
   top: 73px;
@@ -148,7 +196,11 @@ canvas {
 }
 
 .posts-link {
-  right: 90px;
+  right: 150px;
+}
+
+.skills-link {
+  right: 88px;
 }
 
 .projects-link {
@@ -438,7 +490,8 @@ canvas {
   }
 }
 
-#posts {
+#posts,
+#skills {
   .block-right {
     display: block;
     .content {
