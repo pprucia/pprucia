@@ -104,32 +104,43 @@ canvas {
 
 .skills-menu-icon {
   position: absolute;
-  top: 30px;
+  top: 29px;
   right: 90px;
   width: 20px;
   height: 25px;
-  border: 2px solid $gray;
   background: $white;
+
   &:before {
     content: '';
-    width: 20px;
-    height: 25px;
+    width: 24px;
+    height: 30px;
     position: absolute;
     right: 2px;
     border: 2px solid $gray;
     top: 2px;
     background: $white;
+    border-radius: 3px;
   }
-  &:after {
+
+  display:inline-block;
+  &:after{
     content: '';
-    width: 20px;
-    height: 25px;
-    border: 2px solid $gray;
+    display: block;
+
     position: absolute;
-    right: 6px;
-    top: 6px;
-    background: $white;
+    top: 2px;
+    right: 1px;
+
+    width: 11px;
+    height: 26px;
+ 
+    border: solid $gray;
+    border-width: 0 3px 3px 0;
+ 
+    transform: rotate(45deg);
+    border-radius: 3px;
   }
+
   &:hover {
     border-color: $base-color;
     &:before,
@@ -147,6 +158,7 @@ canvas {
   height: 25px;
   border: 2px solid $gray;
   background: $white;
+  border-radius: 3px;
   &:before {
     content: '';
     width: 20px;
@@ -156,6 +168,7 @@ canvas {
     border: 2px solid $gray;
     top: 2px;
     background: $white;
+    border-radius: 3px;
   }
   &:after {
     content: '';
@@ -166,6 +179,7 @@ canvas {
     right: 6px;
     top: 6px;
     background: $white;
+    border-radius: 3px;
   }
   &:hover {
     border-color: $base-color;
@@ -173,6 +187,15 @@ canvas {
     &:after {
       border-color: $base-color;
     }
+  }
+}
+
+.skills-menu-icon-selected {
+  &:before {
+    border: 2px solid lighten($blue, 20);
+  }
+  &:after {
+    border-color: lighten($blue, 20);
   }
 }
 
