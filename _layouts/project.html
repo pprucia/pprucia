@@ -15,7 +15,7 @@ layout: compress
           <h1 class="section-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
           <ul class="tags">
             {% for tag in page.tags %}
-              <li><a href="{{ site.url }}/project-tags#{{ tag }}">{{ tag }}</a></li>
+              <li>{{ tag }}</li>
               {% unless forloop.last %}
               {% endunless %}
             {% endfor %}
