@@ -28,7 +28,8 @@ layout: compress
       <span class="projects-link">PROJECTS</span>
       <div class="content">
         <ul class="posts-list">
-        {% for post in site.posts %}
+        {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+        {% for post in sorted_posts %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
