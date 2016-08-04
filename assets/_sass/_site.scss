@@ -523,7 +523,8 @@ canvas {
 }
 
 #posts,
-#skills {
+#skills,
+#projects {
   .block-right {
     display: block;
     .content {
@@ -589,7 +590,8 @@ canvas {
       padding-top: 10px;
       text-transform: uppercase;
     }
-    .post-title {
+    .post-title,
+    .project-title {
       display: inline-block;
       max-width: 75%;
       &:hover span {
@@ -617,7 +619,8 @@ canvas {
   }
 }
 
-.inner-post {
+.inner-post,
+.inner-project {
   h1 {
     font-size: 70px;
     line-height: 70px;
@@ -671,7 +674,8 @@ canvas {
   margin-bottom: 50px;
 }
 
-.post-title-section {
+.post-title-section,
+.project-title-section {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -793,6 +797,9 @@ canvas {
   .post-title-section .section-title {
     font-size: 45px;
   }
+  .project-title-section .section-title {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -818,10 +825,12 @@ canvas {
 }
 
 @media screen and (max-width: 640px) {
-  .posts-list {
+  .posts-list,
+  .project-list {
     margin-top: 80px;
     > li {
-      .post-title {
+      .post-title,
+      .project-title {
         max-width: 100%;
       }
       h2 {
@@ -835,7 +844,8 @@ canvas {
       }
     }
   }
-  .inner-post {
+  .inner-post,
+  .inner-project {
     h2 {
       font-size: 20px;
       margin-bottom: 20px;
@@ -852,7 +862,8 @@ canvas {
   .date-highlight {
     margin: 80px 0 40px;
   }
-  .post-title-section {
+  .post-title-section,
+  .project-title-section {
     .section-line {
       display: none;
     }
