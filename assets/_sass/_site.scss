@@ -190,6 +190,15 @@ canvas {
   }
 }
 
+.projects-menu-icon-selected {
+  border: 2px solid lighten($blue, 20);
+  &:before,
+  span,
+  span:before {
+    border: 2px solid lighten($blue, 20);
+  }
+}
+
 .skills-menu-icon-selected {
   &:before {
     border: 2px solid lighten($blue, 20);
@@ -554,7 +563,8 @@ canvas {
 }
 
 .posts-list,
-.skills-list {
+.skills-list,
+.project-list {
   margin: 50px 0;
   > li {
     margin-bottom: 23px;

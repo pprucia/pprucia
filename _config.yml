@@ -25,6 +25,11 @@ kramdown:
 sass:
   sass_dir:         assets/_sass
   style:            compressed
+collections:
+  projects:
+    output:         true
+    permalink:      /:title/
+
 
 # Google Analytics
 #google-analytics: UA-10401898-3
