@@ -86,14 +86,14 @@ canvas {
     }
   }
   &:hover {
-    border-color: $green;
+    border-color: $base-color;
     &:before {
-      border-color: $green;
+      border-color: $base-color;
     }
     span {
-      border-color: $green;
+      border-color: $base-color;
       &:before {
-        border-color: $green;
+        border-color: $base-color;
       }
     }
   }
@@ -102,14 +102,63 @@ canvas {
   }
 }
 
+.skills-menu-icon {
+  position: absolute;
+  top: 29px;
+  right: 90px;
+  width: 20px;
+  height: 25px;
+  background: $white;
+
+  &:before {
+    content: '';
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    right: 2px;
+    border: 2px solid $gray;
+    top: 2px;
+    background: $white;
+    border-radius: 3px;
+  }
+
+  display:inline-block;
+  &:after{
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 2px;
+    right: 1px;
+
+    width: 11px;
+    height: 26px;
+ 
+    border: solid $gray;
+    border-width: 0 3px 3px 0;
+ 
+    transform: rotate(45deg);
+    border-radius: 3px;
+  }
+
+  &:hover {
+    border-color: $base-color;
+    &:before,
+    &:after {
+      border-color: $base-color;
+    }
+  }
+}
+
 .posts-menu-icon {
   position: absolute;
   top: 30px;
-  right: 90px;
+  right: 150px;
   width: 20px;
   height: 25px;
   border: 2px solid $gray;
   background: $white;
+  border-radius: 3px;
   &:before {
     content: '';
     width: 20px;
@@ -119,6 +168,7 @@ canvas {
     border: 2px solid $gray;
     top: 2px;
     background: $white;
+    border-radius: 3px;
   }
   &:after {
     content: '';
@@ -129,17 +179,47 @@ canvas {
     right: 6px;
     top: 6px;
     background: $white;
+    border-radius: 3px;
   }
   &:hover {
-    border-color: $green;
+    border-color: $base-color;
     &:before,
     &:after {
-      border-color: $green;
+      border-color: $base-color;
     }
   }
 }
 
+.projects-menu-icon-selected {
+  border: 2px solid lighten($blue, 20);
+  &:before,
+  span,
+  span:before {
+    border: 2px solid lighten($blue, 20);
+  }
+}
+
+.skills-menu-icon-selected {
+  &:before {
+    border: 2px solid lighten($blue, 20);
+  }
+  &:after {
+    border-color: lighten($blue, 20);
+  }
+}
+
+.menu-icon-selected {
+  border: 2px solid lighten($blue, 20);
+  &:before {
+    border: 2px solid lighten($blue, 20);
+  }
+  &:after {
+    border: 2px solid lighten($blue, 20);
+  }
+}
+
 .posts-link,
+.skills-link,
 .projects-link {
   position: absolute;
   top: 73px;
@@ -148,7 +228,11 @@ canvas {
 }
 
 .posts-link {
-  right: 90px;
+  right: 150px;
+}
+
+.skills-link {
+  right: 88px;
 }
 
 .projects-link {
@@ -354,7 +438,7 @@ canvas {
         left: 0;
         right: 0;
         bottom: 0;
-        background: $green;
+        background: $base-color;
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
         -webkit-transform-origin: 50% 100%;
@@ -421,7 +505,7 @@ canvas {
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      background: $green;
+      background: $base-color;
       left: 0;
       width: 200px;
     }
@@ -438,7 +522,9 @@ canvas {
   }
 }
 
-#posts {
+#posts,
+#skills,
+#projects {
   .block-right {
     display: block;
     .content {
@@ -477,7 +563,9 @@ canvas {
   }
 }
 
-.posts-list {
+.posts-list,
+.skills-list,
+.project-list {
   margin: 50px 0;
   > li {
     margin-bottom: 23px;
@@ -502,11 +590,12 @@ canvas {
       padding-top: 10px;
       text-transform: uppercase;
     }
-    .post-title {
+    .post-title,
+    .project-title {
       display: inline-block;
       max-width: 75%;
       &:hover span {
-        border-bottom: 1px dotted $green;
+        border-bottom: 1px dotted $base-color;
       }
     }
   }
@@ -530,7 +619,8 @@ canvas {
   }
 }
 
-.inner-post {
+.inner-post,
+.inner-project {
   h1 {
     font-size: 70px;
     line-height: 70px;
@@ -564,8 +654,8 @@ canvas {
     display: block;
   }
   a:not(.btn):not(.pagination_pager) {
-    color: #399f62;
-    border-bottom: 1px dotted $green;
+    color: $base-color;
+    border-bottom: 1px dotted $base-color;
   }
   ul,
   ol {
@@ -584,7 +674,8 @@ canvas {
   margin-bottom: 50px;
 }
 
-.post-title-section {
+.post-title-section,
+.project-title-section {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -602,7 +693,7 @@ canvas {
     font-size: 15px;
   }
   .section-line {
-    color: $green;
+    color: $base-color;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -624,9 +715,9 @@ canvas {
       margin-left: 10px;
     }
     a {
-      color: $green;
+      color: $base-color;
       &:hover {
-        color: #4dbe7a;
+        color: $base-color;
       }
     }
     em {
@@ -706,6 +797,9 @@ canvas {
   .post-title-section .section-title {
     font-size: 45px;
   }
+  .project-title-section .section-title {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -731,10 +825,12 @@ canvas {
 }
 
 @media screen and (max-width: 640px) {
-  .posts-list {
+  .posts-list,
+  .project-list {
     margin-top: 80px;
     > li {
-      .post-title {
+      .post-title,
+      .project-title {
         max-width: 100%;
       }
       h2 {
@@ -748,7 +844,8 @@ canvas {
       }
     }
   }
-  .inner-post {
+  .inner-post,
+  .inner-project {
     h2 {
       font-size: 20px;
       margin-bottom: 20px;
@@ -765,7 +862,8 @@ canvas {
   .date-highlight {
     margin: 80px 0 40px;
   }
-  .post-title-section {
+  .post-title-section,
+  .project-title-section {
     .section-line {
       display: none;
     }
@@ -856,7 +954,7 @@ canvas {
       border-radius: 0 4px 4px 0;
     }
     &:hover {
-      background-color: $green;
+      background-color: $base-color;
       color: $white !important;
     }
     &.disabled {

@@ -1,0 +1,40 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+  <body id="skills">
+
+    <div class="block-left">
+      <div class="content">
+        <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
+        <h1 class="section-title">{{ page.title }}<em>/</em>
+        </h1>
+      </div>
+    </div>
+
+    <div class="block-right">
+      <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
+      <span class="posts-link">POSTS</span>
+
+      <a href="{{ site.url }}/skills" title="skils" class="skills-menu-icon skills-menu-icon-selected"></a>
+      <span class="skills-link">SKILLS</span>
+
+      <a href="{{ site.url }}/projects" title="{{ site.url }}/projects" class="projects-menu-icon">
+        <span></span>
+      </a>
+      <span class="projects-link">PROJECTS</span>
+      <div class="content">
+        <div class="skills-list">
+          {{ content }}
+          <br>
+          {% include page-pagination.html %}
+        </div>
+      </div>
+    </div>
+    {% include scripts.html %}
+    {% include overlay.html %}
+  </body>
+</html>
