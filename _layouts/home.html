@@ -24,8 +24,10 @@ layout: compress
   </div>
 
   <div class="block-right">
-    <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-    <span class="posts-link">POSTS</span>
+    {% if site.posts.size > 0 %}
+      <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
+      <span class="posts-link">POSTS</span>
+    {% endif %}
       
     <a href="{{ site.url }}/skills" title="skills" class="skills-menu-icon"></a>
     <span class="skills-link">SKILLS</span>

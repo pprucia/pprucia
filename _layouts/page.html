@@ -53,8 +53,10 @@ layout: compress
       <div class="share-buttons">
         {% include share.html %}
       </div>
-      <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-      <span class="posts-link">POSTS</span>
+      {% if site.posts.size > 0 %}
+        <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
+        <span class="posts-link">POSTS</span>
+      {% endif %}
       <a href="{{ site.url }}/skills" title="skils" class="skills-menu-icon"></a>
       <span class="skills-link">SKILLS</span>
       <a href="{{ site.url }}/projects" title="projects" class="projects-menu-icon">
