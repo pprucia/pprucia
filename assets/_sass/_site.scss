@@ -102,10 +102,10 @@ canvas {
   }
 }
 
-.skills-menu-icon {
+.resume-menu-icon {
   position: absolute;
   top: 29px;
-  right: 90px;
+  right: 97px;
   width: 20px;
   height: 25px;
   background: $white;
@@ -153,7 +153,7 @@ canvas {
 .posts-menu-icon {
   position: absolute;
   top: 30px;
-  right: 150px;
+  right: 154px;
   width: 20px;
   height: 25px;
   border: 2px solid $gray;
@@ -199,7 +199,7 @@ canvas {
   }
 }
 
-.skills-menu-icon-selected {
+.resume-menu-icon-selected {
   &:before {
     border: 2px solid lighten($blue, 20);
   }
@@ -219,7 +219,7 @@ canvas {
 }
 
 .posts-link,
-.skills-link,
+.resume-link,
 .projects-link {
   position: absolute;
   top: 73px;
@@ -231,7 +231,7 @@ canvas {
   right: 150px;
 }
 
-.skills-link {
+.resume-link {
   right: 88px;
 }
 
@@ -523,7 +523,7 @@ canvas {
 }
 
 #posts,
-#skills,
+#resume,
 #projects {
   .block-right {
     display: block;
@@ -564,7 +564,7 @@ canvas {
 }
 
 .posts-list,
-.skills-list,
+.resume-list,
 .project-list {
   margin: 50px 0;
   > li {
