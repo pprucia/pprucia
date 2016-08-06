@@ -38,20 +38,20 @@ collections:
 #google-analytics: UA-10401898-3
 
 # Social Links
-#email:             email
-#google.plus:        username
-#twitter:            username
-#facebook:           username
+email:              piotr@prucia.pl
+#google.plus:       username
+#twitter:           username
+#facebook:          username
 github:             pprucia
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:          piotrprucia
+#stackoverflow:     123456/username   # from a "http://stackoverflow.com/users/123456/username" link
+linkedin:           piotrprucia
 #xing:              username
-#instagram:          username
+#instagram:         username
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-#steam:              username
+#steam:             username
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username
@@ -62,7 +62,8 @@ linkedin:          piotrprucia
 #xmpp:              username@server.com
 #hackernews:        username
 #behance:           username
-#strava:             userid         # no icon for now, check font awesome for updates # number form a my profile link https://www.strava.com/athletes/123456
+strava:             8814773            # bicycle icon for now, check font awesome for updates # number form a my profile link https://www.strava.com/athletes/123456
+goodreads:          53513877           # number from https://www.goodreads.com/user/show/0123456789
 
 # Gems
 gems:
