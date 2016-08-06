@@ -5,7 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body id="skills">
+  <body id="resume">
 
     <div class="block-left">
       <div class="content">
@@ -21,15 +21,15 @@ layout: compress
         <span class="posts-link">POSTS</span>
       {% endif %}
 
-      <a href="{{ site.url }}/skills" title="skils" class="skills-menu-icon skills-menu-icon-selected"></a>
-      <span class="skills-link">SKILLS</span>
+      <a href="{{ site.url }}/resume" title="resume" class="resume-menu-icon resume-menu-icon-selected"></a>
+      <span class="resume-link">RESUME</span>
 
       <a href="{{ site.url }}/projects" title="{{ site.url }}/projects" class="projects-menu-icon">
         <span></span>
       </a>
       <span class="projects-link">PROJECTS</span>
       <div class="content">
-        <div class="skills-list">
+        <div class="resume-list">
           {{ content }}
           <br>
           {% include page-pagination.html %}
