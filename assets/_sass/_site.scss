@@ -478,6 +478,9 @@ canvas {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    &:after {
+      background: rgba(#eaeaea, 0.7);
+    }
   }
   h2 {
     font-size: 21px;
@@ -564,7 +567,6 @@ canvas {
 }
 
 .posts-list,
-.resume-list,
 .project-list {
   margin: 50px 0;
   > li {
@@ -601,6 +603,37 @@ canvas {
   }
   .tags li > a {
     color: lighten($black, 28%);
+  }
+}
+
+.resume-list {
+  margin: 50px 0;
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1.2em;
+  }
+  hr {
+    margin-top: 2.5em;
+  }
+  ul,
+  ol {
+    padding-left: 30px;
+    > li {
+      font-size: 1.2em;
+      position: relative;
+      margin-bottom: 20px;
+      > p {
+        margin-bottom: 10px;
+      }
+      > table td {
+        border: none;
+      }
+    }
   }
 }
 
