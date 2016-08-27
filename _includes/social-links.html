@@ -22,7 +22,7 @@
   {% if site.codepen %}<li><a class="social-btn" href="http://codepen.io/{{ site.codepen }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-codepen"></i></a></li>{% endif %}
   {% if site.keybase %}<li><a class="social-btn" href="https://keybase.io/{{ site.keybase }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-key"></i></a></li>{% endif %}
   {% if site.xmpp %}<li><a class="social-btn" href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-lightbulb-o"></i></a></li>{% endif %}
-  {% if site.hackernews %}<li><a class="social-btn" href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i></a></li>{% endif %}
-  {% if site.strava %}<li><a class="social-btn" href="http://strava.com/athletes/{{ site.strava }}/badge" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-bicycle"></i></a></li>{% endif %}
+  {% if site.hackernews %}<li><a class="social-btn" href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer" style="padding-bottom: 0.2em"><i class="fa fa-fw fa-hacker-news"></i></a></li>{% endif %}
+  {% if site.strava %}<li><a class="social-btn" href="http://strava.com/athletes/{{ site.strava }}/badge" target="_blank" rel="noopener noreferrer"><img src="{{ site.url }}/assets/fonts/custom/icon-strava.svg" class="fa-fw" style="height: 1em; padding-top: 0.1em"></a></li>{% endif %}
   {% if site.goodreads %}<li><a class="social-btn" href="https://www.goodreads.com/user/show/{{ site.goodreads }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-book"></i></a></li>{% endif %}
 </ul>

@@ -519,8 +519,7 @@ canvas {
   }
   table.skills-table {
     tbody.highlighted {
-      background-color: #fbfbfb;
-      border-bottom: 1px solid #f4f4f4;
+      background-color: lighten($base-color, 42%);
     }
   }
 }
