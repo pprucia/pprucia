@@ -16,18 +16,9 @@ layout: compress
     </div>
 
     <div class="block-right">
-      {% if site.posts.size > 0 %}
-        <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon"></a>
-        <span class="posts-link">POSTS</span>
-      {% endif %}
+      {% assign class = 'project-menu-selected' %}
+      {% include menu.html %}
 
-      <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon"></a>
-      <span class="resume-link">RESUME</span>
-
-      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon projects-menu-icon-selected">
-        <span></span>
-      </a>
-      <span class="projects-link">PROJECTS</span>
       <div class="content">
         <ul class="project-list">
         {% assign sorted_projects = site.projects | sort: "date" | reverse %}

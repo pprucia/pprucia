@@ -29,16 +29,10 @@ layout: compress
       <div class="share-buttons">
         {% include share.html %}
       </div>
-      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon menu-icon-selected"></a>
-      <span class="posts-link">POSTS</span>
 
-      <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon"></a>
-      <span class="resume-link">RESUME</span>
+      {% assign class = 'post-menu-selected' %}
+      {% include menu.html %}
 
-      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon">
-        <span></span>
-      </a>
-      <span class="projects-link">PROJECTS</span>
       <div class="inner-post content">
         <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
         {{ content }}

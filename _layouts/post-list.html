@@ -16,16 +16,9 @@ layout: compress
     </div>
 
     <div class="block-right">
-      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon menu-icon-selected"></a>
-      <span class="posts-link">POSTS</span>
-
-      <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon"></a>
-      <span class="resume-link">RESUME</span>
-
-      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon">
-        <span></span>
-      </a>
-      <span class="projects-link">PROJECTS</span>
+      {% assign class = 'post-menu-selected' %}
+      {% include menu.html %}
+      
       <div class="content">
         <ul class="posts-list">
         {% assign sorted_posts = site.posts | sort: "date" | reverse %}
