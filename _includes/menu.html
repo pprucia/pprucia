@@ -1,26 +1,74 @@
-{% if site.menu.posts_visible %}
-  {% if class == 'post-menu-selected' %}
-	<a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon menu-icon-selected"></a>
-  {% else %}
-  	<a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon"></a> 
+<table class="top-menu">
+  <tr class="top-menu-icons">
+  {% if site.menu.posts_visible %}
+    <td>
+    {% if class == 'post-menu-selected' %}
+      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon menu-icon-selected"></a>
+    {% else %}
+      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon"></a> 
+    {% endif %}
+    </td>
   {% endif %}
-  <span class="posts-link">POSTS</span>
-{% endif %}
+  {% if site.menu.resume_visible %}
+    <td>
+    {% if class == 'resume-menu-selected' %}
+      <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon resume-menu-icon-selected"></a>
+    {% else %}
+      <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon"></a>
+    {% endif %}
+    </td>
+  {% endif %}
+  {% if site.menu.projects_visible %}
+    <td>
+    {% if class == 'project-menu-selected' %}
+      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon projects-menu-icon-selected">
+        <span></span>
+      </a>
+    {% else %}
+      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon"><span></span></a>
+    {% endif %}
+    </td>
+  {% endif %}
+  </tr>
+  <tr class="top-menu-description">
+  {% if site.menu.posts_visible %}
+    <td>
+      <span class="posts-link">POSTS</span>
+    </td>
+  {% endif %}
+  {% if site.menu.resume_visible %}
+    <td>
+      <span class="resume-link">RESUME</span>
+    </td>
+  {% endif %}
+  {% if site.menu.projects_visible %}
+    <td>
+      <span class="projects-link">PROJECTS</span>
+    </td>
+  {% endif %}
+  </tr>
+</table>
 
-{% if site.menu.resume_visible %}
-  {% if class == 'resume-menu-selected' %}
-    <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon resume-menu-icon-selected"></a>
-  {% else %}
-    <a href="{{ site.url }}/resume" title="Resume" class="resume-menu-icon"></a>
-  {% endif %}
-  <span class="resume-link">RESUME</span>
-{% endif %}
 
-{% if site.menu.projects_visible %}
-  {% if class == 'project-menu-selected' %}
-    <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon projects-menu-icon-selected"><span></span></a>
-  {% else %}
-    <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon"><span></span></a>
-  {% endif %}
-  <span class="projects-link">PROJECTS</span>
-{% endif %}
+<!-- <div >
+  
+    <div class="top-menu-item">
+      
+      
+    </div>
+  
+
+  
+    <div class="top-menu-item">
+      
+      
+    </div>
+  
+
+  
+    <div class="top-menu-item">
+      
+      
+    </div>
+  
+</div> -->
