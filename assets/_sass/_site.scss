@@ -66,15 +66,18 @@ tr.top-menu-description>td {
 tr.top-menu-icons>td,
 tr.top-menu-description>td {
   text-align: center;
-  border-right: 0.5em solid transparent;
+
 }
 
 tr.top-menu-icons>td{
-  padding: 0.4em;
+  padding: 0;
+  padding-bottom: 10px;
+  width: 70px;
 }
 
 tr.top-menu-description>td {
-  padding: 0.2em;
+  padding: 0;
+  width: 70px;
 }
 
 .projects-menu-icon,
