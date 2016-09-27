@@ -48,7 +48,7 @@ canvas {
 
 table.top-menu {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 10px;
   width: auto;
   height: auto;
@@ -317,12 +317,12 @@ tr.top-menu-description>td {
   }
   ul {
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: 15px;
     overflow: hidden;
     li {
       display: inline-block;
       background: #585b63;
-      margin-right: 10px;
+      margin: 5px;
       vertical-align: middle;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
@@ -779,7 +779,7 @@ tr.top-menu-description>td {
 @media screen and (max-width: 640px) {
   .posts-list,
   .project-list {
-    margin-top: 80px;
+    margin-top: 40px;
     > li {
       .post-title,
       .project-title {
@@ -824,14 +824,15 @@ tr.top-menu-description>td {
     }
   }
   .section-title {
-    font-size: 80px;
+    font-size: 70px;
+    left: 20px;
   }
   .projects-menu li {
     width: 100% !important;
     height: 50% !important;
   }
   .content {
-    padding: 20px
+    padding: 40px 20px 20px 20px;
   }
 }
 
