@@ -1,16 +1,17 @@
 # Site
 title: Piotr Prucia
 description: Moblie Software Developer | Cyclist
-url: http://test.prucia.pl
+url: https://www.prucia.pl
 #url: http://127.0.0.1:4000                            # dev
+enforce_ssl: www.prucia.pl
 logo: logo.png                                        # Site logo
 locale: en_US
 
 # Menu visibility
 menu:
-  posts_visible: true
-  resume_visible: true
-  projects_visible: true
+  posts_visible: false
+  resume_visible: false
+  projects_visible: false
 
 # Left Block Images
 background:
@@ -41,7 +42,7 @@ collections:
 
 
 # Google Analytics
-#google-analytics: UA-10401898-3
+google-analytics: UA-10401898-3
 
 # Social Links
 email:              piotr@prucia.pl
