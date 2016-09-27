@@ -48,7 +48,7 @@ canvas {
 
 table.top-menu {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 10px;
   width: auto;
   height: auto;
@@ -317,12 +317,12 @@ tr.top-menu-description>td {
   }
   ul {
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: 15px;
     overflow: hidden;
     li {
       display: inline-block;
       background: #585b63;
-      margin-right: 10px;
+      margin: 5px;
       vertical-align: middle;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
@@ -831,7 +831,7 @@ tr.top-menu-description>td {
     height: 50% !important;
   }
   .content {
-    padding: 20px
+    padding: 40px 20px 20px 20px;
   }
 }
 
