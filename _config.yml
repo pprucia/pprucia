@@ -10,7 +10,7 @@ locale: en_US
 # Menu visibility
 menu:
   posts_visible: false
-  resume_visible: false
+  resume_visible: true
   projects_visible: false
 
 # Left Block Images
