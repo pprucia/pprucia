@@ -42,7 +42,9 @@ collections:
 
 
 # Google Analytics
-google-analytics: UA-10401898-3
+google-analytics:
+  tracking-id: UA-10401898-3
+  track-social-links: true
 
 # Social Links
 email:              piotr@prucia.pl
