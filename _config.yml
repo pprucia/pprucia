@@ -1,9 +1,9 @@
 # Site
 title: Piotr Prucia
 description: Moblie Software Developer | Cyclist
-url: http://www.prucia.pl
+url: https://prucia.pl
 #url: http://127.0.0.1:4000                            # dev
-#enforce_ssl: www.prucia.pl
+enforce_ssl: prucia.pl
 logo: logo.png                                        # Site logo
 locale: en_US
 
