@@ -27,6 +27,15 @@
     {% endif %}
     </td>
   {% endif %}
+  {% if site.menu.cycling_visible %}
+    <td>
+    {% if class == 'cycling-menu-selected' %}
+      <a href="{{ site.url }}/cycling/" title="Cycling" class="cycling-menu-icon cycling-menu-icon-selected"></a>
+    {% else %}
+      <a href="{{ site.url }}/cycling/" title="Cycling" class="cycling-menu-icon"></a>
+    {% endif %}
+    </td>
+  {% endif %}
   </tr>
   <tr class="top-menu-description">
   {% if site.menu.posts_visible %}
@@ -42,6 +51,11 @@
   {% if site.menu.projects_visible %}
     <td>
       <span class="projects-link">PROJECTS</span>
+    </td>
+  {% endif %}
+  {% if site.menu.cycling_visible %}
+    <td>
+      <span class="cycling-link">CYCLING</span>
     </td>
   {% endif %}
   </tr>

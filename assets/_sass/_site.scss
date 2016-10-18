@@ -74,6 +74,11 @@ tr.top-menu-icons>td{
   width: 70px;
 }
 
+tr.top-menu-description>td {
+  padding: 0;
+  width: 70px;
+}
+
 tr.top-menu-icons>td>a {
   font-size: 2em;
   color: $gray;
@@ -93,6 +98,7 @@ tr.top-menu-description>td {
 
 .posts-link,
 .resume-link,
+.cycling-link,
 .projects-link {
   font-size: 12px;
   color: darken($white, 40);
@@ -259,6 +265,7 @@ tr.top-menu-description>td {
 
 #posts,
 #resume,
+#cycling,
 #projects {
   .block-right {
     display: block;
@@ -339,6 +346,51 @@ tr.top-menu-description>td {
 }
 
 .resume-list {
+  margin: 50px 0;
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1.2em;
+  }
+  hr {
+    margin-top: 2.5em;
+  }
+  ul,
+  ol {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    > li {
+      font-size: 1.2em;
+      position: relative;
+      margin-bottom: 10px;
+      > p {
+        margin-bottom: 5px;
+      }
+      > ul,
+      ol {
+        margin-left: -5px;
+        > li {
+          font-size: 1em;
+          margin-bottom: 10px;
+        }
+      }
+      > table td {
+        border: none;
+      }
+    }
+  }
+  table.skills-table {
+    tbody.highlighted {
+      background-color: lighten($base-color, 42%);
+    }
+  }
+}
+
+.cycling-list {
   margin: 50px 0;
   h1 {
     font-size: 40px;

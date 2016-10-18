@@ -12,6 +12,7 @@ menu:
   posts_visible: false
   resume_visible: true
   projects_visible: false
+  cycling_visible: false
 
 # Left Block Images
 background:
@@ -19,6 +20,7 @@ background:
   post-list: images/post_list.jpg                     # this image will be shown on post list page
   project-list: images/project_list.jpg               # this image will be shown on project list page
   resume: images/resume.jpg                           # this image will be shown on skills page
+  cycling: images/cycling.jpg                         # this image will be shown on cycling page
   default-post: images/default_post.jpg               # this image will be shown when post's front matter doesn't specify any image
   default-project: images/default_project.jpg         # this image will be shown when project's front matter doesn't specify any image
 
