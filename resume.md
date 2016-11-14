@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: "Resume"
+title: "Résumé"
 ---
 
 # Professional Experience
@@ -55,4 +55,4 @@ title: "Resume"
 # Languages
 
 - Polish - Native proficiency
-- English - Professional working proficency
+- English - Professional working proficiency
