@@ -44,8 +44,8 @@ function getFormatedPart(number, type) {
 		case 0:
 			return "";
 		case 1:
-			return "1 " + type;
+			return "1&nbsp;" + type;
 		default:
-			return number + " " + type +"s";
+			return number + "&nbsp;" + type +"s";
 	}
 }
