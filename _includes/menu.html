@@ -3,29 +3,27 @@
   {% if site.menu.posts_visible %}
     <td>
     {% if class == 'post-menu-selected' %}
-      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon menu-icon-selected"></a>
+      <a href="{{ site.url }}/posts" title="Posts" class="menu-icon-selected"><span class="fa fa-clone"/></a>
     {% else %}
-      <a href="{{ site.url }}/posts" title="Posts" class="posts-menu-icon"></a> 
+      <a href="{{ site.url }}/posts" title="Posts"><span class="fa fa-clone"/></a>
     {% endif %}
     </td>
   {% endif %}
   {% if site.menu.resume_visible %}
     <td>
     {% if class == 'resume-menu-selected' %}
-      <a href="{{ site.url }}/resume/" title="Résumé" class="resume-menu-icon resume-menu-icon-selected"></a>
+      <a href="{{ site.url }}/resume/" title="Résumé" class="menu-icon-selected"><span class="fa fa-id-badge"/></a>
     {% else %}
-      <a href="{{ site.url }}/resume/" title="Résumé" class="resume-menu-icon"></a>
+      <a href="{{ site.url }}/resume/" title="Résumé"><span class="fa fa-id-badge"/></a>
     {% endif %}
     </td>
   {% endif %}
   {% if site.menu.projects_visible %}
     <td>
     {% if class == 'project-menu-selected' %}
-      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon projects-menu-icon-selected">
-        <span></span>
-      </a>
+      <a href="{{ site.url }}/projects" title="Projects" class="menu-icon-selected"><span class="fa fa-th-large"/></a>
     {% else %}
-      <a href="{{ site.url }}/projects" title="Projects" class="projects-menu-icon"><span></span></a>
+      <a href="{{ site.url }}/projects" title="Projects"><span class="fa fa-th-large"/></a>
     {% endif %}
     </td>
   {% endif %}
