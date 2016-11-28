@@ -66,12 +66,11 @@ tr.top-menu-description>td {
 tr.top-menu-icons>td,
 tr.top-menu-description>td {
   text-align: center;
-
 }
 
 tr.top-menu-icons>td{
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   width: 70px;
 }
 
@@ -80,192 +79,26 @@ tr.top-menu-description>td {
   width: 70px;
 }
 
-.projects-menu-icon,
-.resume-menu-icon,
-.posts-menu-icon {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.projects-menu-icon,
-.resume-menu-icon {
-  position: relative;
-}
-
-.projects-menu-icon {
-  width: 15px;
-  height: 15px;
-  right: -12px;
-  top: -3px;
-  border: 2px solid $gray;
-  border-radius: 3px;
-  cursor: pointer;
-  z-index: 3;
-  margin-right: 5px;
-
-  &:before {
-    content: '';
-    position: relative;
-    display: inline-block;
-    left: -19px;
-    top: -2px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid $gray;
-    border-radius: 3px;
-  }
-  span {
-    position: relative;
-    display: inline-block;
-    top: -5px;
-    right: 2px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid $gray;
-    border-radius: 3px;
-    &:before {
-      content: '';
-      position: relative;
-      display: inline-block;
-      left: -19px;
-      top: -2px;
-      width: 15px;
-      height: 15px;
-      border: 2px solid $gray;
-      border-radius: 3px;
-    }
-  }
+tr.top-menu-icons>td>a {
+  font-size: 2em;
+  color: $gray;
   &:hover {
-    border-color: $base-color;
-    &:before {
-      border-color: $base-color;
-    }
-    span {
-      border-color: $base-color;
-      &:before {
-        border-color: $base-color;
-      }
-    }
-  }
-  &.active {
-    position: fixed;
+    color: $base-color;
   }
 }
 
-.resume-menu-icon {
-  top: -1px;
-  width: 20px;
-  height: 25px;
-  background: $white;
-  margin-right: 4px;
-
-  &:before {
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 30px;
-    right: 2px;
-    border: 2px solid $gray;
-    top: 2px;
-    background: $white;
-    border-radius: 3px;
-  }
-
-  &:after{
-    content: '';
-    position: relative;
-    display: inline-block;
-    top: -33px;
-    right: -8px;
-    width: 11px;
-    height: 26px;
-    border: solid $gray;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-    border-radius: 3px;
-  }
-
-  &:hover {
-    border-color: $base-color;
-    &:before,
-    &:after {
-      border-color: $base-color;
-    }
-  }
+tr.top-menu-icons>td>a.menu-icon-selected {
+  color: lighten($blue, 15);
 }
 
-.posts-menu-icon {
-  width: 20px;
-  height: 25px;
-  border: 2px solid $gray;
-  background: $white;
-  border-radius: 3px;
-  margin-right: 6px;
-
-  &:before {
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 25px;
-    right: -1px;
-    border: 2px solid $gray;
-    top: 1px;
-    background: $white;
-    border-radius: 3px;
-  }
-  &:after {
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 25px;
-    border: 2px solid $gray;
-    right: -4px;
-    top: -26px;
-    background: $white;
-    border-radius: 3px;
-  }
-  &:hover {
-    border-color: $base-color;
-    &:before,
-    &:after {
-      border-color: $base-color;
-    }
-  }
-}
-
-.projects-menu-icon-selected {
-  border: 2px solid lighten($blue, 20);
-  &:before,
-  span,
-  span:before {
-    border: 2px solid lighten($blue, 20);
-  }
-}
-
-.resume-menu-icon-selected {
-  &:before {
-    border: 2px solid lighten($blue, 20);
-  }
-  &:after {
-    border-color: lighten($blue, 20);
-  }
-}
-
-.menu-icon-selected {
-  border: 2px solid lighten($blue, 20);
-  &:before {
-    border: 2px solid lighten($blue, 20);
-  }
-  &:after {
-    border: 2px solid lighten($blue, 20);
-  }
+tr.top-menu-description>td {
+  padding: 0;
+  width: 70px;
 }
 
 .posts-link,
 .resume-link,
+.cycling-link,
 .projects-link {
   font-size: 12px;
   color: darken($white, 40);
@@ -432,6 +265,7 @@ tr.top-menu-description>td {
 
 #posts,
 #resume,
+#cycling,
 #projects {
   .block-right {
     display: block;
@@ -512,6 +346,51 @@ tr.top-menu-description>td {
 }
 
 .resume-list {
+  margin: 50px 0;
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 1.2em;
+  }
+  hr {
+    margin-top: 2.5em;
+  }
+  ul,
+  ol {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    > li {
+      font-size: 1.2em;
+      position: relative;
+      margin-bottom: 10px;
+      > p {
+        margin-bottom: 5px;
+      }
+      > ul,
+      ol {
+        margin-left: -5px;
+        > li {
+          font-size: 1em;
+          margin-bottom: 10px;
+        }
+      }
+      > table td {
+        border: none;
+      }
+    }
+  }
+  table.skills-table {
+    tbody.highlighted {
+      background-color: lighten($base-color, 42%);
+    }
+  }
+}
+
+.cycling-list {
   margin: 50px 0;
   h1 {
     font-size: 40px;
