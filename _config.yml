@@ -50,7 +50,7 @@ google-analytics:
 
 # Social Links
 email:              piotr@prucia.pl
-#google.plus:       username
+#google-plus:       username
 twitter:            pprucia
 #facebook:          username
 github:             pprucia
@@ -73,8 +73,11 @@ linkedin:           pprucia
 #xmpp:              username@server.com
 #hackernews:        username
 #behance:           username
-strava:             8814773            # bicycle icon for now, check font awesome for updates # number form a my profile link https://www.strava.com/athletes/123456
+strava:             8814773            # custom svg icon for now, check font awesome for updates # number form a my profile link https://www.strava.com/athletes/123456
 goodreads:          53513877           # number from https://www.goodreads.com/user/show/0123456789
+
+# Other Links (drawn like social links)
+#public-key:         filename.pgp    # name of the file placed in ./assets/public/
 
 # Gems
 gems:
