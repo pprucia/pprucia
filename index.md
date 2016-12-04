@@ -1,5 +1,13 @@
 ---
 layout: home
+redirect_from:
+ - /images/
+ - /assets/
+ - /assets/css/
+ - /assets/fonts/
+ - /assets/fonts/custom/
+ - /assets/js/
+ - /assets/js/src/
 ---
 # About me
 
