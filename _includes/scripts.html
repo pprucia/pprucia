@@ -29,7 +29,7 @@
 		ga('send', 'event', 'link-click', action, label);
 		{% endif %}
 		{% if site.analytics.clicky.tracking-id %}
-		clicky.log(action + ' / ' + label, "Link clicked", 'click');
+		clicky.log( "#" + action + "/" + label, action + " / " + label , 'click');
 		{% endif %}
 	}
 </script>
