@@ -43,10 +43,19 @@ collections:
     permalink:      /:title/
 
 
-# Google Analytics
-google-analytics:
-  tracking-id: UA-10401898-3
+# Analytics config
+analytics:
+  
+  # Google Analytics
+  google-analytics:
+    tracking-id: UA-10401898-3
+
+  # clicky.com
+  clicky:
+    tracking-id: 101013602
+
   track-social-links: true
+
 
 # Social Links
 email:              piotr@prucia.pl
@@ -77,7 +86,7 @@ strava:             8814773            # custom svg icon for now, check font awe
 goodreads:          53513877           # number from https://www.goodreads.com/user/show/0123456789
 
 # Other Links (drawn like social links)
-#public-key:         filename.pgp    # name of the file placed in ./assets/public/
+#public-key:         filename.pgp       # name of the file placed in ./assets/public/
 
 # Gems
 gems:
