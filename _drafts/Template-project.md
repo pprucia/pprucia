@@ -15,7 +15,7 @@ tags:
 {: style="text-align: justify;"}
 
 
-## Technologies
+## Libraries and frameworks
 
 |:-----------:|:-----------:|:-----------:|
 |     ...     |     ...     |     ...     |
