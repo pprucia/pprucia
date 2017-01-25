@@ -47,8 +47,8 @@ collections:
 analytics:
   
   # Google Analytics
-  google-analytics:
-    tracking-id: UA-10401898-3
+#  google-analytics:
+#    tracking-id: UA-XXXXXXXX-X
 
   # clicky.com
   clicky:

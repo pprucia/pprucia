@@ -5,7 +5,7 @@ title: "Résumé"
 
 # Professional Experience
 
-- **Software Engineer - Mobile / Tech Lead** @ Pegasystems
+- **Software Engineer - Mobile & Tech Lead** @ Pegasystems
 
   | September 2015 - Present <script type="text/javascript">document.write(countMonths("Sep 1, 2015",new Date().toDateString()))</script> | Cracow |
 
