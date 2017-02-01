@@ -6,6 +6,7 @@ categories:
   - [COMPANY NAME]
 tags:
   - [PLATFORM]
+excerpt: ""
 ---
 
 ## Description
