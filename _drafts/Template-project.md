@@ -6,6 +6,7 @@ categories:
   - [COMPANY NAME]
 tags:
   - [PLATFORM]
+excerpt: ""
 ---
 
 ## Description
@@ -17,7 +18,6 @@ tags:
 
 ## Libraries and frameworks
 
-|:-----------:|:-----------:|:-----------:|
 |     ...     |     ...     |     ...     |
 
 
