@@ -32,9 +32,13 @@ title: "Résumé"
 |   Mobile Applications   |                     |                |
 
 
-| **Skills in development** |                 |       |
-|:-------------------------:|:---------------:|:-----:|
-|        Objective-C        | iOS Development | Xcode |
+| **Skills in development** |
+|:-------------------------:|
+|           Scala           |
+|        Objective-C        |
+|      iOS Development      |
+|           Xcode           |
+
 
 ***
 
