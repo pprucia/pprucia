@@ -12,7 +12,7 @@ menu:
   posts_visible: false
   resume_visible: true
   projects_visible: true
-  cycling_visible: false
+  cycling_visible: true
 
 # Left Block Images
 background:
