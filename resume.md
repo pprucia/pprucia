@@ -28,14 +28,14 @@ title: "Résumé"
 | **Professional skills** |                     |                |
 |:-----------------------:|:-------------------:|:--------------:|
 |           Java          | Android Development | Android Studio |
-|            Git          |       REST          |     SQLite     | 
+|            Git          |       REST          |     SQLite     |
 |   Mobile Applications   |                     |                |
 
 
 | **Skills in development** |
 |:-------------------------:|
-|           Scala           |
-|        Objective-C        |
+|           Kotlin          |
+|            Swift          |
 |      iOS Development      |
 |           Xcode           |
 
