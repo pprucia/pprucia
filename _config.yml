@@ -58,7 +58,7 @@ analytics:
 
 
 # Social Links
-email:              piotr@prucia.pl
+email:              piotr.prucia@pm.me
 #google-plus:       username
 twitter:            pprucia
 #facebook:          username
@@ -86,7 +86,7 @@ strava:             8814773            # custom svg icon for now, check font awe
 goodreads:          53513877           # number from https://www.goodreads.com/user/show/0123456789
 
 # Other Links (drawn like social links)
-public-key:         piotr@prucia.pl.pgp       # name of the file placed in ./assets/public/
+public-key:         publickey-piotr.prucia@pm.me.asc       # name of the file placed in ./assets/public/
 
 # Gems
 gems:
