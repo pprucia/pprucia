@@ -52,9 +52,9 @@ analytics:
 
   # clicky.com
   clicky:
-    tracking-id: 101013602
+#     tracking-id: 101013602
 
-  track-social-links: true
+  track-social-links: false
 
 
 # Social Links
