@@ -5,9 +5,17 @@ title: "Résumé"
 
 # Professional Experience
 
+- **Android Developer** @ Bikemap
+
+  | January 2020 - Present <script type="text/javascript">document.write(countMonths("Jan 1, 2020" new Date().toDateString()))</script> | Vienna, Austria (Remote) |
+
+- **Android Developer** @ Bank Millennium
+
+  | March 2019 - January 2020 <script type="text/javascript">document.write(countMonths("Mar 1, 2019","Jan 1, 2020"))</script> | Warsaw |
+
 - **Software Engineer - Mobile & Tech Lead** @ Pegasystems
 
-  | September 2015 - Present <script type="text/javascript">document.write(countMonths("Sep 1, 2015",new Date().toDateString()))</script> | Cracow |
+  | September 2015 - March 2019 <script type="text/javascript">document.write(countMonths("Sep 1, 2015","Mar 1, 2019"))</script> | Cracow |
 
 - **Software Engineer - Mobile** @ Pegasystems
 
@@ -25,19 +33,11 @@ title: "Résumé"
 
 # Skills
 
-| **Professional skills** |                     |                |
-|:-----------------------:|:-------------------:|:--------------:|
-|           Java          | Android Development | Android Studio |
-|            Git          |       REST          |     SQLite     |
-|   Mobile Applications   |                     |                |
-
-
-| **Skills in development** |
-|:-------------------------:|
-|           Kotlin          |
-|            Swift          |
-|      iOS Development      |
-|           Xcode           |
+| **Professional skills** |                     |                     |
+|:-----------------------:|:-------------------:|:-------------------:|
+|        Kotlin           |         Java        | Android Development |
+|    Android Studio       |         Git         |       REST          |
+|        SQLite           | 
 
 
 ***
