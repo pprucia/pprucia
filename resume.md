@@ -7,7 +7,7 @@ title: "Résumé"
 
 - **Android Developer** @ Bikemap
 
-  | January 2020 - Present <script type="text/javascript">document.write(countMonths("Jan 1, 2020" new Date().toDateString()))</script> | Vienna, Austria (Remote) |
+  | January 2020 - Present <script type="text/javascript">document.write(countMonths("Jan 1, 2020", new Date().toDateString()))</script> | Vienna, Austria (Remote) |
 
 - **Android Developer** @ Bank Millennium
 
